@@ -11,7 +11,22 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h2>Please enter 2 numbers between -127 and 127</h2>
+        <input type="text" id="inputOne">
+        <input type="text" id="inputTwo">
+        <button type="button" onClick="calculate()">CALCULATE!!!</button>
+        
+        
+        <p id="output"></p>
         <p>Test</p>
+        <script type = "text/javascript>
+            function calculate()
+            {
+                var input1 = document.getElementById("inputOne");
+                var input2 = document.getElementById("inputTwo");
+                
+                document.setElementById("output").setInnerHTML = "input1 + input2";
+            }
+        </script>
     </body>
 </html>
